@@ -23,4 +23,7 @@
     <string name="exit">Do you want to exit the app?</string>
     <string name="switch_image">Switch Image</string>
     <string name="number_of_clicks">Number of clicks:</string>
+    <string name="access_photos">Access Photos</string>
+    <string name="permission_allowed">Permission allowed</string>
+    <string name="permission_denied">Permission denied</string>
 </resources>

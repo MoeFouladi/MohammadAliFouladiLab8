@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_green"
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/MoeHomeTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/home_fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/lavender"/>
+        android:layout_gravity="center"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/nameid"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</RelativeLayout>
+    <ImageView
+        android:id="@+id/MoeHomeimageView"
+        android:layout_width="314dp"
+        android:layout_height="437dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="224dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/MoeHomebutton"
+        android:layout_width="142dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="128dp"
+        android:text="@string/switch_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

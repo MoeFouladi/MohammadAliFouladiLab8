@@ -1,5 +1,8 @@
 package mohammadali.fouladi.n01547173;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,7 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
+import androidx.appcompat.app.AlertDialog;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +22,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.MenuItem;
 import android.widget.Toast;
 public class FouladiActivity8 extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener  {
@@ -38,7 +42,8 @@ public class FouladiActivity8 extends AppCompatActivity implements NavigationVie
 
                 }
                 else {
-                    finish();
+                   alert();
+
                 }
             }
         };
@@ -63,7 +68,7 @@ public class FouladiActivity8 extends AppCompatActivity implements NavigationVie
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         if(item.getItemId()==R.id.nav_logout){
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new LogoutFragment()).commit();
+          alert();
             Toast.makeText(this, R.string.logout, Toast.LENGTH_SHORT).show();
         } else if (item.getItemId()==R.id.nav_about) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutUsFragment()).commit();
@@ -81,6 +86,21 @@ public class FouladiActivity8 extends AppCompatActivity implements NavigationVie
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
+public void alert() {
+    new AlertDialog.Builder(FouladiActivity8.this)
+            .setIcon(R.drawable.img)
+            .setTitle(R.string.Fullname)
+            .setMessage(getString(R.string.exit))
+            .setCancelable(false)
+            .setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(getString(R.string.gitLink)));
 
-
+                    startActivity(intent);
+                }
+            })
+            .setNegativeButton(R.string.no, null)
+            .show();
+}
 }

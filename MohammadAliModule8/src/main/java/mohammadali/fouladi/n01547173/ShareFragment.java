@@ -133,6 +133,7 @@ public class ShareFragment extends Fragment {
         Snackbar.make(getView(), getString(R.string.checkbox)+":"+  isChecked+ "\n"+ getString(R.string.emailshow) + email + getString(R.string.idshow) + id, Snackbar.LENGTH_INDEFINITE)
                 .setAction(R.string.dismiss, v -> {
                     checkBox.setChecked(false);
+
                     emailEditText.setText("");
                     idEditText.setText("");
                 }).show();

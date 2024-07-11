@@ -26,6 +26,7 @@ public class AboutUsFragment extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
     private static final String SHARED_PREFS_NAME = "profile_prefs";
+    private static final String COUNTER_KEY = "access_counter";
 
 
     // TODO: Rename and change types of parameters
@@ -66,13 +67,16 @@ public class AboutUsFragment extends Fragment {
         }
         sharedPreferences = getActivity().getSharedPreferences(SHARED_PREFS_NAME, Context.MODE_PRIVATE);
 
-        count = 0;
+        count=sharedPreferences.getInt(COUNTER_KEY, 0);
         count++;
 
+
         SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putInt(COUNTER_KEY, count);
         editor.apply();
 
         Toast.makeText(getActivity(), getString(R.string.access_counter) + count + "\n"+getString(R.string.Fullname), Toast.LENGTH_SHORT).show();
+
 
     }
 

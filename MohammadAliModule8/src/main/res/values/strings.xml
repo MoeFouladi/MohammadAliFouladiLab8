@@ -39,4 +39,10 @@
     <string name="dismiss">Dismiss</string>
     <string name="id_must_be_at_least_6_digits">ID must be at least 6 digits</string>
     <string name="invalid_email">Invalid email</string>
+    <string name="name">MohammadAli</string>
+    <string name="Lastname">Fouladi</string>
+    <string name="no_data">No Data</string>
+    <string name="lock_portrait">Lock Portrait</string>
+    <string name="unlock">Unlock</string>
+    <string name="access_counter">"Access Counter: "</string>
 </resources>

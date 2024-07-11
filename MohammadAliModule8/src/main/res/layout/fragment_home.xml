@@ -32,6 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:src="@tools:sample/backgrounds/scenic" />
+    <!-- MohammadAli Fouladi N01547173-->
 
     <Button
         android:id="@+id/MoeHomebutton"

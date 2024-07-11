@@ -1,0 +1,50 @@
+<resources>
+    <!-- MohammadAli Fouladi N01547173-->
+
+    <string name="app_name">MohammadAliLab8</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Bonjour fragment vierge</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="share">Partager</string>
+    <string name="settings">Paramètres</string>
+    <string name="home">Accueil</string>
+    <string name="Fullname">MohammadAli Fouladi</string>
+    <string name="HumberMail">n01547173@humber.ca</string>
+    <string name="gitLink">https://www.youtube.com/watch?v=K1caxbWpgZA</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="settings_fragment">Fragment des paramètres</string>
+    <string name="about_us_fragment">Fragment à propos de nous</string>
+    <string name="home_fragment">Fragment daccueil</string>
+    <string name="share_fragment">Fragment de partage</string>
+    <string name="nameid">MohammadAli n01547173</string>
+    <string name="logout_fragment">Fragment de déconnexion</string>
+    <string name="exit">Voulez-vous quitter lapplication?</string>
+    <string name="switch_image">Changer dimage</string>
+    <string name="number_of_clicks">Nombre de clics:</string>
+    <string name="access_photos">Accéder aux photos</string>
+    <string name="permission_allowed">Permission accordée</string>
+    <string name="permission_denied">Permission refusée</string>
+    <string name="profile">Profil</string>
+    <string name="checkbox">Case à cocher</string>
+    <string name="email">Email:</string>
+    <string name="enter_email">Entrer lemail</string>
+    <string name="enter_id">Entrer lID étudiant (chiffres uniquement)</string>
+    <string name="id">ID:</string>
+    <string name="current_date_and_time">Date et heure actuelles: </string>
+    <string name="ok">OK</string>
+    <string name="emailshow">, email: </string>
+    <string name="idshow">, id: </string>
+    <string name="dismiss">Rejeter</string>
+    <string name="id_must_be_at_least_6_digits">LID doit comporter au moins 6 chiffres</string>
+    <string name="invalid_email">Email invalide</string>
+    <string name="name">MohammadAli</string>
+    <string name="Lastname">Fouladi</string>
+    <string name="no_data">Pas de données</string>
+    <string name="lock_portrait">Verrouiller en mode portrait</string>
+    <string name="unlock">Déverrouiller</string>
+    <string name="access_counter">Compteur daccès: </string>
+</resources>

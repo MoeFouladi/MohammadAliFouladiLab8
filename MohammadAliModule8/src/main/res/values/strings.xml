@@ -26,4 +26,17 @@
     <string name="access_photos">Access Photos</string>
     <string name="permission_allowed">Permission allowed</string>
     <string name="permission_denied">Permission denied</string>
+    <string name="profile">Profile</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="email">Email:</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_id">Enter Student ID(Digits Only)</string>
+    <string name="id">ID:</string>
+    <string name="current_date_and_time">"Current date and time: "</string>
+    <string name="ok">OK</string>
+    <string name="emailshow">", email: "</string>
+    <string name="idshow">", id: "</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="id_must_be_at_least_6_digits">ID must be at least 6 digits</string>
+    <string name="invalid_email">Invalid email</string>
 </resources>

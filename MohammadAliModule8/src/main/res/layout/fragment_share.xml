@@ -1,18 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/rose"
     tools:context=".ShareFragment">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/Profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/share_fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/lavender"/>
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="100dp"
 
+        android:text="@string/profile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_below="@id/Profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/checkbox"
+        android:textColor="@color/red"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+      />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+
+        android:text="@string/email"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="46dp"
+        android:layout_marginStart="106dp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/email"
+
+        android:layout_marginStart="24dp"
+
+        android:layout_toEndOf="@id/email"
+        android:hint="@string/enter_email"
+  />
+
+    <TextView
+        android:id="@+id/shareid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="46dp"
+
+        android:layout_marginStart="106dp"
+        android:text="@string/id"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/idEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/shareid"
+        android:layout_marginStart="24dp"
+
+        android:layout_toEndOf="@id/shareid"
+        android:hint="@string/enter_id"
+        android:inputType="number"
+        android:maxLength="10"
+      />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="261dp"
+        android:layout_height="241dp"
+        android:layout_below="@id/idEditText"
+        android:layout_marginTop="54dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/img" />
 </RelativeLayout>

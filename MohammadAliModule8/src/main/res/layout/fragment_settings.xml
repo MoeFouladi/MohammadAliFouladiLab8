@@ -10,7 +10,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/MoeSettingstextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Settingsbutton"
+        android:id="@+id/MoeSettingsbutton"
         android:layout_width="174dp"
         android:layout_height="64dp"
         android:layout_marginStart="118dp"
@@ -33,7 +33,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/SettingsimageView"
+        android:id="@+id/MoeSettingsimageView"
         android:layout_width="216dp"
         android:layout_height="417dp"
         android:layout_marginStart="97dp"

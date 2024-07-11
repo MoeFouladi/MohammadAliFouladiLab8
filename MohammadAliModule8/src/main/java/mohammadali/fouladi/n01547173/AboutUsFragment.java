@@ -81,13 +81,13 @@ public class AboutUsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
      View view = inflater.inflate(R.layout.fragment_about_us, container, false);
-        TextView sharedPrefsTextView = view.findViewById(R.id.sharedTV);
+        TextView sharedPrefsTextView = view.findViewById(R.id.MoesharedTV);
         boolean checkboxChecked = sharedPreferences.getBoolean("key_checkbox", false);
         String email = sharedPreferences.getString("key_email", getString(R.string.no_data));
         String id = sharedPreferences.getString("key_id", getString(R.string.no_data));
         sharedPrefsTextView.setText(getString(R.string.checkbox)+": " + checkboxChecked + "\nEmail: " + email + "\nID: " + id);
 
-        ToggleButton toggleButton = view.findViewById(R.id.toggleButton);
+        ToggleButton toggleButton = view.findViewById(R.id.MoetoggleButton);
         toggleButton.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {
                 getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

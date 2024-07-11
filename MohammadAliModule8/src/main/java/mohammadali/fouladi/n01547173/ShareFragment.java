@@ -85,10 +85,10 @@ public class ShareFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_share, container, false);
 
 
-        checkBox = view.findViewById(R.id.checkbox);
-        emailEditText = view.findViewById(R.id.emailEditText);
-        idEditText = view.findViewById(R.id.idEditText);
-        ImageButton imageButton = view.findViewById(R.id.imageButton);
+        checkBox = view.findViewById(R.id.Moecheckbox);
+        emailEditText = view.findViewById(R.id.MoeemailEditText);
+        idEditText = view.findViewById(R.id.MoeidEditText);
+        ImageButton imageButton = view.findViewById(R.id.MoeimageButton);
 
         imageButton.setOnClickListener(v -> validate());
         return view;

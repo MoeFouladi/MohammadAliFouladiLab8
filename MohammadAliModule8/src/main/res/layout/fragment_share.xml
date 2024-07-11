@@ -11,7 +11,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/Profile"
+        android:id="@+id/MoeProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="175dp"
@@ -26,10 +26,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkbox"
+        android:id="@+id/Moecheckbox"
         android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        android:layout_below="@id/Profile"
+        android:layout_below="@id/MoeProfile"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
         android:text="@string/checkbox"
@@ -40,10 +40,10 @@
       />
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/Moeemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/checkbox"
+        android:layout_below="@id/Moecheckbox"
 
         android:text="@string/email"
         android:textColor="@color/red"
@@ -53,22 +53,22 @@
         android:layout_marginStart="106dp" />
 
     <EditText
-        android:id="@+id/emailEditText"
+        android:id="@+id/MoeemailEditText"
         android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/email"
+        android:layout_alignBaseline="@id/Moeemail"
 
         android:layout_marginStart="24dp"
 
-        android:layout_toEndOf="@id/email"
+        android:layout_toEndOf="@id/Moeemail"
         android:hint="@string/enter_email"
   />
 
     <TextView
-        android:id="@+id/shareid"
+        android:id="@+id/Moeshareid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/emailEditText"
+        android:layout_below="@id/MoeemailEditText"
         android:layout_marginTop="46dp"
 
         android:layout_marginStart="106dp"
@@ -79,23 +79,23 @@
         />
 
     <EditText
-        android:id="@+id/idEditText"
+        android:id="@+id/MoeidEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/shareid"
+        android:layout_alignBaseline="@id/Moeshareid"
         android:layout_marginStart="24dp"
 
-        android:layout_toEndOf="@id/shareid"
+        android:layout_toEndOf="@id/Moeshareid"
         android:hint="@string/enter_id"
         android:inputType="number"
         android:maxLength="10"
       />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/MoeimageButton"
         android:layout_width="261dp"
         android:layout_height="241dp"
-        android:layout_below="@id/idEditText"
+        android:layout_below="@id/MoeidEditText"
         android:layout_marginTop="54dp"
         android:layout_marginStart="100dp"
         android:src="@drawable/img" />

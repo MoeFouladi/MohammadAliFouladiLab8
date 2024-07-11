@@ -97,8 +97,8 @@ public class SettingsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
-        button = view.findViewById(R.id.Settingsbutton);
-        imageView= view.findViewById(R.id.SettingsimageView);
+        button = view.findViewById(R.id.MoeSettingsbutton);
+        imageView= view.findViewById(R.id.MoeSettingsimageView);
         button.setOnClickListener(v ->  {
             if (ActivityCompat.checkSelfPermission(this.requireContext(), Manifest.permission.READ_MEDIA_IMAGES )
                     != PackageManager.PERMISSION_GRANTED) {
